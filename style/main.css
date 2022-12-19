@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 40%;
+  margin: 3rem auto;
+}
+.container .title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container .form-container {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+.container .form-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+.container .form-container .input-container label {
+  font-size: 18px;
+  font-weight: 500;
+}
+.container .form-container .input-container input {
+  font-size: 16px;
+  padding: 10px 6px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.container .form-container .input-container #picture {
+  border: none;
+}
+.container .form-container .input-container .error {
+  position: absolute;
+  bottom: -18px;
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+}
+.container .form-container .submit-btn {
+  width: 30%;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 8px;
+  align-self: center;
+  border-radius: 6px;
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.container .form-container .btn-disable {
+  background: rgb(123, 123, 231);
+  cursor: not-allowed;
+}
+
+.hide {
+  display: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

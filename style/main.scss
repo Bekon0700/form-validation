@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 40%;
+    margin: 3rem auto;
+
+    .title {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .form-container {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+
+            label {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            input {
+                font-size: 16px;
+                padding: 10px 6px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #ccc;
+            }
+
+            #picture {
+                border: none;
+            }
+
+            .error {
+                position: absolute;
+                bottom: -18px;
+                align-self: flex-start;
+                font-size: 12px;
+                font-weight: 600;
+                color: red;
+            }
+
+        }
+        .submit-btn {
+            width: 30%;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            padding: 8px;
+            align-self: center;
+            border-radius: 6px;
+            background: blue;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn-disable {
+            background: rgb(123, 123, 231);
+            cursor: not-allowed;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
